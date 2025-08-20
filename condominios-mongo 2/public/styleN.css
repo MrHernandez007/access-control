@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(109, 109, 109, 0.514),
+        rgba(122, 122, 122, 0.507)),
+        url(https://24-7propertysolutions.com/wp-content/uploads/2024/03/EB-GU3466.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 180px;
+}
+
+.menu label {
+    cursor: pointer;
+    /* display: none; */
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #fffefe;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #38c3ff;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #7cc3ec;
+}
+
+.seguridad {
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.seguridad-content {
+    text-align: center;
+}
+
+.seguridad-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.seguridad-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.seguridad-1 {
+    padding: 0 25px;
+}
+
+.seguridad-1 img {
+    width: 200px;
+}
+
+.seguridad-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.seguridad-1 h3 {
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.services {
+    background-image: linear-gradient(
+        rgba(85, 84, 84, 0.63),
+        rgba(114, 113, 113, 0.582)),
+        url(https://goo.su/U98Fa);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 100px 0;
+}
+
+.services-content {
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 40px;
+    line-height: 1px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+
+.footer {
+    padding: 100px 0;
+    background-color: #7cc3ec;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .header {
+        min-height: 0vh;
+    }
+    
+    .header-content {
+        padding: 100px 30px;
+    }
+    
+    .header-content p {
+        padding: 0;
+    }
+    
+    .seguridad {
+        padding: 30px;
+    }
+    
+    .seguridad-content h2 {
+        padding: 0;
+    }
+    
+    .txt-p {
+        padding: 0;
+    }
+    
+    .seguridade-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .seguridad-img {
+        display: none;
+    }
+    .services {
+        padding: 30px;
+    }
+    
+    .services-content p {
+        padding: 0;
+    }
+    
+    .services-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    
+    .services-1 {
+        margin-bottom: 25px;
+    }
+    
+    .general {
+        flex-direction: column;
+    }
+    
+    .general-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2, .general-3 {
+        display: none;
+    }
+
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+
+
+    .contacto {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contacto h2 {
+      text-align: left;
+      font-size: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 30px;
+    }
+
+    .contacto p.descripcion {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .contacto form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contacto input,
+    .contacto textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 0;
+      outline: none;
+    }
+
+    .contacto textarea {
+      min-height: 100px;
+      resize: none;
+    }
+
+    .contacto button {
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 100px;
+      align-self: center;
+    }
+
+    .contacto button:hover {
+      background: #333;
+    }
+
+    .contacto small {
+      font-size: 11px;
+      color: #666;
+      margin-top: 10px;
+      display: block;
+    }
+
+    .contacto .info-extra {
+      margin-top: 40px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .contacto .info-extra strong {
+      font-size: 16px;
+    }
+
+
+
+    /* ======== APARTADO 1 ======== */
+.apartado-1 {
+    display: flex;
+}
+.apartado-1-texto {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+.apartado-1-img {
+    background-image: url('https://img1.wsimg.com/isteam/ip/95c093aa-8c17-4947-8364-57f6e11c54f5/SANTA%20ANA.jpg/:/cr=t:0%25,l:20.2%25,w:59.61%25,h:100%25/rs=w:600,h:600,cg:true');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 550px;
+    margin: 0 auto;
+}
+
+/* ======== APARTADO 2 ======== */
+.apartado-2 {
+    display: flex;
+}
+.apartado-2-texto {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+.apartado-2-img {
+    background-image: url('https://isteam.wsimg.com/ip/95c093aa-8c17-4947-8364-57f6e11c54f5/altitude.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 550px;
+    margin: 0 auto;
+}
+
+/* ======== APARTADO 3 ======== */
+.apartado-3 {
+    display: flex;
+}
+.apartado-3-texto {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+.apartado-3-img {
+    background-image: url('https://img1.wsimg.com/isteam/ip/95c093aa-8c17-4947-8364-57f6e11c54f5/nouve.jpg/:/cr=t:0%25,l:16.75%25,w:66.5%25,h:100%25/rs=w:600,h:451,cg:true');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 550px;
+    margin: 0 auto;
+}
+
+/* ======== APARTADO 4 ======== */
+.apartado-4 {
+    display: flex;
+}
+.apartado-4-texto {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+.apartado-4-img {
+    background-image: url('https://img1.wsimg.com/isteam/ip/95c093aa-8c17-4947-8364-57f6e11c54f5/logo%201.jpg/:/cr=t:16.3%25,l:0%25,w:100%25,h:50%25/rs=w:600,h:300,cg:true');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 550px;
+    margin: 0 auto;
+}
+
+/* ======== APARTADO 5 ======== */
+.apartado-5 {
+    display: flex;
+}
+.apartado-5-texto {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+.apartado-5-img {
+    background-image: url('https://img1.wsimg.com/isteam/ip/95c093aa-8c17-4947-8364-57f6e11c54f5/biosfera-residencial-libramiento-carretero-kil.jpg/:/cr=t:12.5%25,l:0%25,w:100%25,h:75%25/rs=w:600,h:300,cg:true');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 550px;
+    margin: 0 auto;
+}
+
+/* ======== APARTADO 6 ======== */
+.apartado-6 {
+    display: flex;
+}
+.apartado-6-texto {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+.apartado-6-img {
+    background-image: url('https://img1.wsimg.com/isteam/ip/95c093aa-8c17-4947-8364-57f6e11c54f5/manglelivinghome.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 550px;
+    margin: 0 auto;
+}
+
+/* ======== APARTADO 7 ======== */
+.apartado-7 {
+    display: flex;
+}
+.apartado-7-texto {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+.apartado-7-img {
+    background-image: url('https://img1.wsimg.com/isteam/ip/95c093aa-8c17-4947-8364-57f6e11c54f5/logro%C3%B1o.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 550px;
+    margin: 0 auto;
+}
+
+
+.apartado-1-texto h2,
+.apartado-2-texto h2,
+.apartado-3-texto h2,
+.apartado-4-texto h2,
+.apartado-5-texto h2,
+.apartado-6-texto h2,
+.apartado-7-texto h2 {
+    font-size: 50px; 
+}
+
+.apartado-1-texto p,
+.apartado-2-texto p,
+.apartado-3-texto p,
+.apartado-4-texto p,
+.apartado-5-texto p,
+.apartado-6-texto p,
+.apartado-7-texto p {
+    font-size: 18px; 
+    line-height: 1.6; 
+}
+
+.apartado-1-img,
+.apartado-2-img,
+.apartado-3-img,
+.apartado-5-img,
+.apartado-6-img
+ {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 50%;
+    height: 550px;
+    margin: 0 auto;
+}
+
+
